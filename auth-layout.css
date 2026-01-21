@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #4c1d95;
+  --secondary-color: #312e81;
+}
+
+body {
+  background: linear-gradient(180deg, #1d2734 0%, #404a5d 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container,
+.signup-container {
+  max-width: 450px;
+  width: 100%;
+  padding: 20px;
+}
+
+.login-header,
+.signup-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  color: white;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.login-body,
+.signup-body {
+  padding: 40px 30px;
+}
+
+.login-card,
+.signup-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.btn-login {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border: none;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(99, 102, 241, 0.4);
+  color: white !important;
+}
+
+.social-btn {
+  border: 2px solid #e5e7eb;
+  padding: 12px;
+  transition: all 0.2s ease;
+}
+
+.social-btn:hover {
+  border-color: var(--primary-color);
+  background-color: #f9fafb;
+}
+
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.back-link:hover {
+  transform: translateX(-5px);
+  color: white;
+}
