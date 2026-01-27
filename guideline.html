@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コミュニティガイドライン - AniListo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="icon" href="images\icons\animei_icon.png">
+    <style>
+        .post-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .post-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .user-avatar-small {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .toast-container {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            z-index: 1050;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+        }
+
+        #previewTags span {
+            display: inline-block;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-film"></i> AniListo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active under_h" href="index.html">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link under_h" href="anime-list.html">作品一覧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link under_h" href="anime-ranking.html">ランキング</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link under_h" href="anime-mylist.html">マイリスト</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link under_h" href="anime-community.html">コミュニティ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-none under_h" href="anime-login.html">ログイン</a>
+                    </li>
+                </ul>
+                <a href="anime-login.html" class="btn btn-light ms-3 d-none d-lg-block btn_css">
+                    <i class="bi bi-person-circle"></i> ログイン</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ページヘッダー -->
+    <div class="page-heading">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">
+                <i class="bi bi-chat-dots-fill"></i> コミュニティガイドライン
+            </h1>
+            <p class="lead">健全なコミュニティをみんなで心がけましょう！</p>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+
+        <!-- 概要カード -->
+        <div class="card shadow-sm mb-5">
+            <div class="card-body">
+                <p class="card-text">
+                    本ガイドラインは、当サイトのコミュニティ（コメント欄・掲示板・タイムライン等）を、
+                    すべてのユーザーが安心して楽しめる場所にすることを目的としています。
+                    アニメや作品への愛を気持ちよく共有するため、以下の内容をご確認ください。
+                </p>
+            </div>
+        </div>
+
+        <!-- アコーディオン -->
+        <div class="accordion" id="guidelineAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#g1">
+                        1. 基本姿勢：他のユーザーを尊重しましょう
+                    </button>
+                </h2>
+                <div id="g1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>年齢・性別・国籍・価値観・好みの違いを尊重してください。</li>
+                            <li>自分と異なる意見を見かけても、攻撃的な言動は控えましょう。</li>
+                            <li>「作品への批判」と「人への攻撃」は別物です。人を傷つける表現は禁止です。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#g2">
+                        2. 誹謗中傷・差別的表現の禁止
+                    </button>
+                </h2>
+                <div id="g2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>特定の個人・団体・作品・声優・制作スタッフへの誹謗中傷は禁止です。</li>
+                            <li>差別的、侮辱的、脅迫的、過度に暴力的な表現は認められません。</li>
+                            <li>ネタや冗談のつもりでも、他者が不快に感じる可能性がある表現には注意してください。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#g3">
+                        3. ネタバレへの配慮
+                    </button>
+                </h2>
+                <div id="g3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>未放送・未配信・未読の内容に触れる場合は、必ずネタバレ警告を付けてください。</li>
+                            <li>タイトルやサムネイル、投稿冒頭でのネタバレは特に注意してください。</li>
+                            <li>ネタバレを望まないユーザーの体験を損なわない配慮をお願いします。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#g4">
+                        4. 著作権・知的財産権の尊重
+                    </button>
+                </h2>
+                <div id="g4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>アニメ・漫画・ゲーム等の画像、動画、音声、文章の無断転載は禁止です。</li>
+                            <li>公式に許可されている範囲（引用・埋め込み等）を守って利用してください。</li>
+                            <li>違法アップロードされたコンテンツへのリンク共有も禁止します。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#g5">
+                        5. スパム・宣伝行為の禁止
+                    </button>
+                </h2>
+                <div id="g5" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>無関係な広告、アフィリエイト目的の投稿は禁止です。</li>
+                            <li>同じ内容の連投、過度な自己宣伝、外部サイトへの誘導行為は控えてください。</li>
+                            <li>管理者がスパムと判断した投稿は、予告なく削除される場合があります。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#g6">
+                        6. 不適切なコンテンツについて
+                    </button>
+                </h2>
+                <div id="g6" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>過度に性的な表現、グロテスクな表現は投稿しないでください。</li>
+                            <li>未成年に不適切な内容を含む投稿は禁止です。</li>
+                            <li>公序良俗に反する内容は認められません。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#g7">
+                        7. なりすまし・虚偽情報の禁止
+                    </button>
+                </h2>
+                <div id="g7" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>他人になりすます行為、虚偽の情報を拡散する行為は禁止です。</li>
+                            <li>公式情報のように誤認される表現には十分注意してください。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#g8">
+                        8. トラブルが起きた場合
+                    </button>
+                </h2>
+                <div id="g8" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>ユーザー同士のトラブルは、感情的な応酬を避けてください。</li>
+                            <li>問題のある投稿を見つけた場合は、返信ではなく通報機能をご利用ください。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#g9">
+                        9. 運営による対応について
+                    </button>
+                </h2>
+                <div id="g9" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>ガイドラインに違反する投稿は、削除・非表示となる場合があります。</li>
+                            <li>悪質または繰り返しの違反が確認された場合、アカウント停止等の措置を行うことがあります。</li>
+                            <li>運営の判断は最終的なものとします。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#g10">
+                        10. ガイドラインの変更
+                    </button>
+                </h2>
+                <div id="g10" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>
+                            本ガイドラインは、必要に応じて予告なく変更されることがあります。<br>
+                            最新の内容をご確認のうえ、コミュニティをご利用ください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- フッター -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AniListo</h5>
+                    <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サイト情報</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">プライバシー</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サポート</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3">以下のSNSをフォローして最新の情報を常にゲット！</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-discord fs-4"></i></a>
+                    </div>
+                    <a href="guideline.html" class="text-light text-decoration-none zoomtext mt-3">コミュニティガイドライン</a>
+
+                </div>
+                <hr class="border-light">
+                <p class="text-center text-light mb-0">&copy; 2025 AniListo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTopBtn" class="btn shadow d-flex align-items-center justify-content-center">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

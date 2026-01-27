@@ -246,3 +246,14 @@ footer a:hover .bi-instagram {
 footer a:hover .bi-discord {
   transform: rotate(-10deg);
 }
+
+.zoomtext {
+  display: inline-block;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.zoomtext:hover {
+  transform: scale(1.08);
+  color: #0d6efd; /* Bootstrapのprimary */
+}
+
