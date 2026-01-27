@@ -69,7 +69,7 @@ function createAnimeCard(anime) {
     </div>
   `;
 }
-
+// 繰り下げ、繰り上げ、四捨五入の関数
 // 星評価をHTMLで作る関数
 function createStars(rating) {
 

@@ -84,7 +84,10 @@ anime-ranking.htmlがあるので冗長だと思い削除しました。
 - anime-community.htmlの＋ボタンにホバーすると＋から＋新規投稿にアクション変化するように編集
 
 ### javascriptの変更(javascript ブランチ) 
-
+- anime-list.htmlをjsで動くように設定
+- anime-list.jsを追加
+- jsonで作品のデータを管理化
+- jsの理解が甘いのでコメントアウトでできる限りわかりやすい工夫をしました。
 ###
 
 
