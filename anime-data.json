@@ -1,0 +1,235 @@
+[
+    {
+        "id": 1,
+        "title": "異世界の勇者 ～運命の旅路～",
+        "genre": [
+            "ファンタジー"
+        ],
+        "status": "放送中",
+        "rating": 4.5,
+        "reviews": 1234,
+        "image": "images/異世界の勇者 ～運命の旅路～.webp",
+        "description": "異世界に勇者として召喚された高校生が..."
+    },
+    {
+        "id": 2,
+        "title": "桜色の約束",
+        "genre": [
+            "恋愛",
+            "SF"
+        ],
+        "status": "放送中",
+        "rating": 4.8,
+        "reviews": 2156,
+        "image": "images/桜色の約束.webp",
+        "description": "高校最後の春。幼馴染との約束を胸に..."
+    },
+    {
+        "id": 3,
+        "title": "近未来探偵ネオ",
+        "genre": [
+            "アクション",
+            "SF"
+        ],
+        "status": "完結",
+        "rating": 4.2,
+        "reviews": 980,
+        "image": "images/近未来探偵ネオ.webp",
+        "description": "近未来の都市で活躍する探偵ネオの..."
+    },
+    {
+        "id": 4,
+        "title": "魔法学園の秘密",
+        "genre": [
+            "ファンタジー",
+            "学園"
+        ],
+        "status": "放送中",
+        "rating": 4.7,
+        "reviews": 1500,
+        "image": "images/魔法学園の秘密.webp",
+        "description": "魔法が存在する学園で繰り広げられる..."
+    },
+    {
+        "id": 5,
+        "title": "時空の旅人",
+        "genre": [
+            "冒険",
+            "SF"
+        ],
+        "status": "完結",
+        "rating": 4.3,
+        "reviews": 1100,
+        "image": "images/時空の旅人.webp",
+        "description": "時空を超えて冒険する若者たちの物語..."
+    },
+    {
+        "id": 6,
+        "title": "未来都市の守護者",
+        "genre": [
+            "アクション",
+            "SF"
+        ],
+        "status": "放送中",
+        "rating": 4.6,
+        "reviews": 1345,
+        "image": "images/未来都市の守護者.webp",
+        "description": "未来都市を守るヒーローたちの戦いを..."
+    },
+    {
+        "id": 7,
+        "title": "天空の冒険者たち",
+        "genre": [
+            "冒険",
+            "ファンタジー"
+        ],
+        "status": "放送中",
+        "rating": 4.4,
+        "reviews": 1250,
+        "image": "images/天空の冒険者たち.webp",
+        "description": "空を舞台に繰り広げられる壮大な冒険..."
+    },
+    {
+        "id": 8,
+        "title": "デジタルワールドの戦士",
+        "genre": [
+            "アクション",
+            "SF"
+        ],
+        "status": "完結",
+        "rating": 4.1,
+        "reviews": 890,
+        "image": "images/デジタルワールドの戦士.webp",
+        "description": "デジタルワールドで戦う若き戦士の..."
+    },
+    {
+        "id": 9,
+        "title": "星降る夜の物語",
+        "genre": [
+            "恋愛",
+            "ファンタジー"
+        ],
+        "status": "放送中",
+        "rating": 4.9,
+        "reviews": 2300,
+        "image": "images/星降る夜の物語.webp",
+        "description": "星空の下で繰り広げられる感動の..."
+    },
+    {
+        "id": 10,
+        "title": "未来戦士アーク",
+        "genre": [
+            "アクション",
+            "SF"
+        ],
+        "status": "完結",
+        "rating": 4.0,
+        "reviews": 760,
+        "image": "images/未来戦士アーク.webp",
+        "description": "未来の地球を守る戦士アークの..."
+    },
+    {
+        "id": 11,
+        "title": "魔法の森の冒険者",
+        "genre": [
+            "ファンタジー",
+            "冒険"
+        ],
+        "status": "放送中",
+        "rating": 4.5,
+        "reviews": 1400,
+        "image": "images/魔法の森の冒険者.webp",
+        "description": "魔法の森で繰り広げられる冒険と..."
+    },
+    {
+        "id": 12,
+        "title": "時空探偵リナ",
+        "genre": [
+            "アクション",
+            "SF"
+        ],
+        "status": "完結",
+        "rating": 4.2,
+        "reviews": 950,
+        "image": "images/時空探偵リナ.webp",
+        "description": "時空を超えて事件を解決する探偵リナの..."
+    },
+    {
+        "id": 13,
+        "title": "恋する未来都市",
+        "genre": [
+            "恋愛",
+            "SF"
+        ],
+        "status": "放送中",
+        "rating": 4.8,
+        "reviews": 2000,
+        "image": "images/恋する未来都市.webp",
+        "description": "未来都市で繰り広げられる恋愛模様を..."
+    },
+    {
+        "id": 14,
+        "title": "天空の魔法使い",
+        "genre": [
+            "ファンタジー",
+            "学園"
+        ],
+        "status": "放送中",
+        "rating": 4.6,
+        "reviews": 1600,
+        "image": "images/天空の魔法使い.webp",
+        "description": "天空の学園で魔法を学ぶ若者たちの..."
+    },
+    {
+        "id": 15,
+        "title": "デジタル探偵団",
+        "genre": [
+            "アクション",
+            "SF"
+        ],
+        "status": "完結",
+        "rating": 4.3,
+        "reviews": 880,
+        "image": "images/デジタル探偵団.webp",
+        "description": "デジタル世界で活躍する探偵団の..."
+    },
+    {
+        "id": 16,
+        "title": "星空の冒険者",
+        "genre": [
+            "冒険",
+            "ファンタジー"
+        ],
+        "status": "放送中",
+        "rating": 4.7,
+        "reviews": 1450,
+        "image": "images/星空の冒険者.webp",
+        "description": "星空を舞台に繰り広げられる壮大な冒険..."
+    },
+    {
+        "id": 17,
+        "title": "未来学園の守護者",
+        "genre": [
+            "アクション",
+            "SF"
+        ],
+        "status": "完結",
+        "rating": 4.1,
+        "reviews": 820,
+        "image": "images/未来学園の守護者.webp",
+        "description": "未来学園を守るヒーローたちの戦いを..."
+    },
+    {
+        "id": 18,
+        "title": "魔法都市の恋人たち",
+        "genre": [
+            "恋愛",
+            "ファンタジー"
+        ],
+        "status": "放送中",
+        "rating": 4.9,
+        "reviews": 2200,
+        "image": "images/魔法都市の恋人たち.webp",
+        "description": "魔法都市で繰り広げられる感動の..."
+    }
+]
